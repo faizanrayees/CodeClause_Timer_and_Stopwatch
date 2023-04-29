@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="stopwatch.css">
+   
+</head>
+<body>
+    <h1 style = "color:white;">
+        Timer & Stopwatch
+    </h1>
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Timer</a></li>
+            <li><a href="stopwatch.html">Stopwatch</a></li>
+          </ul>
+        <div class="wrapper">
+            <p>
+                <span class="minute text" id="min">00</span>
+                <span>:</span>
+                <span class="seconds text" id="seconds" >00</span>
+                <span>.</span>
+                <span class="tens text" id="tens">00</span>
+            </p>
+        </div>
+        <div class="buttons" id="btn-div">
+            <button class="btn-start" id="start" onclick="startTimer(), buttonOp()">START</button>
+            <button class="btn-reset" id="reset" onclick="resetTimer()">RESET</button>
+        </div>
+    </div>
+<style>
+   #footer {
+       position: bottom;
+       padding: 10px 10px 0px 10px;
+       bottom: 0;
+       width: 100%;
+       /* Height of the footer*/
+       height: 40px;
+   }
+</style>
+<center>
+   <div id="contain">
+       <div id="footer">
+         <footer>&copy; Made by Mohammed Rayees Ahmed</footer>
+   </div>
+   </div>
+</center>
+<script src="stopwatch.js" ></script>
+</body>
+</html>
